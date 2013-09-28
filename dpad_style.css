@@ -1,0 +1,23 @@
+body{
+background-image:url('square.png');
+
+}
+
+.dpadButton{
+	z-index:10000000000;position:fixed;border:.1em solid yellow;width:3em;height:3em;line-height:3em;background-color:B8002E;border-radius: 50%;-webkit-user-select: none;
+}
+
+.dpadCircle{
+	z-index:999999999;position:fixed;border:.1em solid F5B800;width:10em;height:10em;background-color:2EB800;border-radius: 50%;-webkit-user-select: none;opacity: 0.5;
+}
+
+
+<!—-
+    * {
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-touch-callout: none;
+    }
+-->
+
+

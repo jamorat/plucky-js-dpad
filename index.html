@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="dpad_style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="jQueryRotateCompressed.2.1.js"></script>
+<script src="script.js"></script>
+</head>
+
+<body id="theBody" style="cursor:none;">
+<div style="bottom:1.6em;left:3.8em;text-align:center;font-family:Futura-CondensedExtraBold;" class="dpadButton" id="dButton">D</div>
+<div style="bottom:7em;left:3.8em;text-align:center;font-family:Futura-CondensedExtraBold;" class="dpadButton" id="uButton" onclick="showXYInTopLine()">U</div>
+<div style="bottom:4.3em;left:.8em;text-align:center;font-family:Futura-CondensedExtraBold;" class="dpadButton" id="lButton" onclick="showXYInTopLine()">L</div>
+<div style="bottom:4.3em;left:6.8em;text-align:center;font-family:Futura-CondensedExtraBold;" class="dpadButton" id="rButton" onclick="showXYInTopLine()">R</div>
+<div style="bottom:.75em;left:.2em;" class="dpadCircle" onclick="showXYInTopLine()" ></div>
+<img style="display:none;border:0;" src="graphics/notice.png">
+
+
+
+
+<div id="sketch"></div>
+  <img id="ptr" src="spaceship.gif" class="follow" style="position: absolute;left:-100px;top:-100px;z-index:25000;border:0;width:2px;height:2px;visibility:hidden;"/>
+
+
+
+	<div id="mainDiv">
+	
+	
+  	
+
+<?php
+        //northwest outer then inner
+        ?>
+        
+<div style="top:0;left:0;position:fixed;color:gold;width:100%;font-family:thonburi;font-size:2em;" id="goodIndicator">plucky dpad js</div>
+
+<div onmouseout="refocusBody();" style="position:absolute;left:-30px;top:250px;width:461px;height:371px;"><!-- <a href="about.php"><img src="graphics/planet_about.jpg" style="border:0;"></a>--></div>
+
+
+
+<?php
+        //northeast outer then inner
+        ?>
+
+
+<div onmouseout="refocusBody();" style="position:absolute;left:1200px;top:50px;width:450px;height:447px;cursor:pointer;"><!-- <a href="shop.php"><img src="graphics/planet_shopping.jpg" style="border:0;"></a>--></div>
+
+
+
+         <?php
+        //southeast outer then inner
+        ?>
+
+<div onmouseout="refocusBody();" style="position:absolute;left:1200px;top:600px;width:474px;height:426px;cursor:pointer;"><!--<a href="vg.php"><img src="graphics/planet_videos_and_games.jpg" style="border:0;"></a>--></div>
+
+	
+
+        <?php
+        //southwest outer then inner
+        ?>
+
+<div onmouseout="refocusBody();" style="position:absolute;left:100px;top:600px;width:494px;height:346px;cursor:pointer;"><a href="contact.php"><img src="graphics/planet_contact.jpg" style="border:0;"></a></div>
+
+<!--<div id="about_handh"></div>-->
+	
+	</div>
+	
+	
+	
+	<div style="position:absolute;top:40px;left:20px;width:2000px;height:30px;margin-left:0px;left:0px;color:FFCC33;font-family:Helvetica;font-size:25px;font-weight:bold;background-color:green;" id="statusDiv"></div>
+	
+	<div style="position:absolute;top:20px;left:20px;color:yellow;font-family:Helvetica;font-size:25px;font-weight:bold;opacity:1;filter:alpha(opacity=100);z-index:10000;"> </div>
+	<div style="position:absolute;top:20px;right:20px;color:yellow;font-family:Helvetica;font-size:25px;font-weight:bold;opacity:0.4;filter:alpha(opacity=40);"></div>
+	
+	<div id="upDownTouch" style="position:absolute;bottom:20px;height:30px;color:yellow;font-family:Helvetica;font-size:25px;font-weight:bold;right:0;"> </div> <!--shows lower right corner Touching or blank indicator -->
+
+</body>
+</html>
