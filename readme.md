@@ -1,6 +1,13 @@
 plucky-dpad-js
 ==============
 
+How to Try It Out
+---------
+Place these files on your server space, and visit the index.html file with your phone or iPad.<br>
+**Not optimized for desktop. Needs to be viewed in a phone.**
+
+About
+------
 JavaScript dpad for info navigation / game control
 
 Originally was a project built for desktop web browsing where the user could place their mouse near the edge of the screen in order to 'fly a spaceship around.' (Accomplished by using JQuery to move a DIV.)
